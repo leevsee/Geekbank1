@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">生病的小笨喵</string>
+    <string name="splash_text">Geekbank启动界面</string>
+    <string name="click_to_enter">点击进入</string>
+    <string name="hello_word_text">hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!</string>
+    <string name="friend_circle">朋友圈</string>
+    <string name="handle_text_view">我是handle</string>
+    <string name="music_serive_star">STAR</string>
+    <string name="music_service_stop">STOP</string>
+    <string name="send_broadcat">Send Broadcat</string>
+    <string name="widget_button">Widget_Button</string>
+    <string name="widget_text_view">weidget_TextView</string>
+    <string name="confirm">確定</string>
+    <string name="add">添加</string>
+    <string name="database">database</string>
+    <string name="database_del">删除</string>
+    <string name="database_modify">更新</string>
+    <string name="network_button">network_button</string>
+    <string name="download">下载</string>
+    <string name="aidlButton">点击</string>
+</resources>

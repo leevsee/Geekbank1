@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.leeves.h.geekbank1">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_lu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XiLE4Uqa69pHZe6Gbqs5iMFMpgoluA1l"/>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ListViewAcitvity">
+
+        </activity>
+        <activity
+            android:name=".GridViewAcitvity"
+            android:icon="@drawable/ic_lu"
+            >
+        </activity>
+
+        <activity android:name=".TestRedButtonActivity">
+
+        </activity>
+
+        <activity android:name=".TestFragmentActivity">
+
+        </activity>
+        <activity android:name=".HandlerButtonActivity">
+
+        </activity>
+        <activity android:name=".MusicServiceActivity">
+
+        </activity>
+        <activity android:name=".SendBroadcastActivity">
+
+        </activity>
+        <activity android:name=".WebViewButtonActivity">
+
+        </activity>
+
+        <activity android:name=".DatabaseButtonActivity">
+
+        </activity>
+
+        <activity android:name=".NetworkActivity">
+
+        </activity>
+
+        <activity android:name=".ThreadActivity">
+
+        </activity>
+
+        <activity android:name=".aidl.AIDLActivity">
+
+        </activity>
+
+        <activity android:name=".MapTestActivity">
+
+        </activity>
+
+        <provider
+            android:name=".provider.TestContentProvider"
+            android:authorities="com.leeves.h.geekbank1"/>
+
+        <service android:name=".service.MusiceService"/>
+
+        <service
+            android:name=".messenger.MessengerService"
+            android:enabled="true"
+            android:exported="true"
+            android:process="com.test.messenger.service"
+            >
+
+        </service>
+
+        <service
+            android:name=".aidl.AIDLService"
+            android:enabled="true"
+            android:exported="true"
+            android:process="com.test.aidl.service"
+            >
+
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+
+        <receiver android:name=".TestBroadcastReceiver">
+            <intent-filter>
+                <!-- 指定该BroadcastReceiver所响应的Intent的Action -->
+                <action android:name="com.geekband.test.broadcast"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".TestWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <!-- 存储 -->
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_setting">
+            </meta-data>
+
+        </receiver>
+
+    </application>
+
+</manifest>

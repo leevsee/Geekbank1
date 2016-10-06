@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#888888"
+    tools:context="com.leeves.h.geekbank1.MainActivity">
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:textSize="18sp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:singleLine="true"-->
+        <!--android:maxLines="2"-->
+        <!--android:textColor="@color/red"-->
+        <!--android:text="@string/hello_word_text" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_frist"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Button" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_second"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Button" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_thrid"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Button" />-->
+
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/editText2" />-->
+
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText3" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:src="@drawable/ic_lu"-->
+        <!--android:background="@drawable/ic_launcher"-->
+
+        <!--android:id="@+id/imageView" />-->
+
+    <!--<SeekBar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/seekBar" />-->
+
+    <!--<ProgressBar-->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:max="100"-->
+        <!--android:progress="50"-->
+        <!--android:id="@+id/progressBar" />-->
+    <include layout="@layout/activity_splash" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/grid_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button1"
+        android:id="@+id/button11" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:text="Button2"
+        android:id="@+id/button12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_below="@id/button12"
+        android:id="@+id/textView1" />
+
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_below="@id/button12"
+        android:background="@color/red"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button6"
+            android:id="@+id/button16" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button7"
+            android:id="@+id/button17" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button5"
+        android:layout_toRightOf="@id/center_layout"
+        android:layout_below="@id/button12"
+        android:id="@+id/button15" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListView"
+        android:layout_below="@id/textView1"
+        android:id="@+id/button13" />
+
+    <Button
+        android:id="@+id/network_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf="@+id/button13"
+        android:text="@string/network_button"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button13"
+        android:text="GridView"
+        android:id="@+id/button14" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button13"
+        android:layout_toRightOf="@id/button14"
+        android:text="broadcastButton"
+        android:id="@+id/broadcastButton" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button13"
+        android:layout_toRightOf="@+id/broadcastButton"
+        android:id="@+id/web_button"
+        android:text="webView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/button14"
+        android:text="Large Text"
+        android:id="@+id/textView2" />
+
+    <ScrollView
+        android:id="@+id/grid_scrollView"
+        android:layout_below="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ScrollView"/>
+            <Button
+                android:id="@+id/database_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/database"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <!--
+        <TextView
+            style="@style/TextTest"
+            android:id="@+id/test_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid_scrollView"
+            android:text="TestStyles"
+            />
+        <View
+            android:id="@+id/test_px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/test_theme"
+            android:background="@color/white"
+            >
+        </View>
+        <TextView
+            style="@style/TextTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/test_px"
+            android:gravity="center"
+            android:text="TestStyles"
+            />
+            -->
+</RelativeLayout>
